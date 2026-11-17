@@ -4,6 +4,7 @@
   let active = false;
   const readChoice = () => { try { return localStorage.getItem(key); } catch { return null; } };
   function enable() {
+    window['ga-disable-' + measurement] = false;
     if (active) return;
     active = true;
     window.dataLayer = window.dataLayer || [];
