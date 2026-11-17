@@ -11,8 +11,6 @@ server {
     add_header Referrer-Policy strict-origin-when-cross-origin always;
     gzip on;
     gzip_types text/css application/javascript application/json application/xml image/svg+xml;
-    location = /index.html { return 301 /$is_args$args; }
-    location = /guides/index.html { return 301 /guides/$is_args$args; }
     location = /guides { return 301 /guides/$is_args$args; }
     location / { try_files $uri $uri.html $uri/ =404; }
     location /assets/ { expires 30d; add_header Cache-Control "public"; }

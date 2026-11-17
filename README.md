@@ -22,7 +22,7 @@ Seven guides cover subdivisions, displaced clicks, silent bars, tempo ladders, p
 
 Homepage metadata uses WebSite, WebPage and Organization structured data. Software app rich results require genuine eligible review/rating data which we do not currently publish. Do not fabricate ratings or add incomplete app rich-result markup simply to satisfy a checker. This does not prevent ordinary search indexing.
 
-Nginx uses relative redirects behind Railway's HTTPS proxy so internal port 8080 is never exposed in directory redirects. `/guides`, `/guides/index.html` and `/index.html` redirect to their canonical URLs. Responsive image filenames include a source hash and can be cached for 30 days.
+Nginx uses relative redirects behind Railway's HTTPS proxy so internal port 8080 is never exposed in directory redirects. `/guides` redirects to `/guides/`. Index file aliases retain canonical tags; they must not have unconditional redirect locations, because Nginx internally resolves directory indexes through those locations. Responsive image filenames include a source hash and can be cached for 30 days.
 
 Google Search Console domain property: metronomeo.com. Keep the google-site-verification DNS TXT record. Sitemap submitted and homepage indexing requested on 17 November 2026.
 
