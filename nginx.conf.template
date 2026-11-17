@@ -3,13 +3,18 @@ server {
     server_name _;
     root /usr/share/nginx/html;
     index index.html;
+    # Railway terminates HTTPS before forwarding to this internal HTTP port.
+    absolute_redirect off;
     charset utf-8;
     if ($host = www.metronomeo.com) { return 301 https://metronomeo.com$request_uri; }
     add_header X-Content-Type-Options nosniff always;
     add_header Referrer-Policy strict-origin-when-cross-origin always;
     gzip on;
     gzip_types text/css application/javascript application/json application/xml image/svg+xml;
+    location = /index.html { return 301 /$is_args$args; }
+    location = /guides/index.html { return 301 /guides/$is_args$args; }
+    location = /guides { return 301 /guides/$is_args$args; }
     location / { try_files $uri $uri.html $uri/ =404; }
-    location /assets/ { expires 7d; add_header Cache-Control "public"; }
+    location /assets/ { expires 30d; add_header Cache-Control "public"; }
     location = /health { access_log off; return 200 'ok'; }
 }

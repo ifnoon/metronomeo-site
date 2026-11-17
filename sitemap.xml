@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://metronomeo.com/</loc></url>
-  <url><loc>https://metronomeo.com/guides/</loc></url>
-  <url><loc>https://metronomeo.com/guides/count-subdivisions.html</loc></url>
-  <url><loc>https://metronomeo.com/guides/anchor-shift.html</loc></url>
-  <url><loc>https://metronomeo.com/guides/tempo-ladder.html</loc></url>
-  <url><loc>https://metronomeo.com/guides/gap-practice.html</loc></url>
-  <url><loc>https://metronomeo.com/support.html</loc></url>
-  <url><loc>https://metronomeo.com/privacy.html</loc></url>
+  <url><loc>https://metronomeo.com/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/anchor-shift.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/count-subdivisions.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/gap-practice.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/tempo-ladder.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/polyrhythm-practice.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/polymeter-vs-polyrhythm.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/guides/ableton-link-midi.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/support.html</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://metronomeo.com/privacy.html</loc><lastmod>2026-11-17</lastmod></url>
 </urlset>

@@ -16,7 +16,13 @@ Railway project **Websites**, service **metronomeo**, production environment. Th
 
 Homepage → footer Practice guides → /guides/ → individual articles. Related guides link articles together. Every public page is listed in sitemap.xml. robots.txt points to the sitemap. Articles include Article and BreadcrumbList JSON-LD, titles, descriptions and canonical URLs.
 
-Article source text is in content/. Published HTML is in guides/. Update both when editing. Use real modification dates only when content changes. No rankings or indexing timelines are guaranteed.
+Article source text is in content/. Published HTML is in guides/. To update articles, install scripts/requirements.txt in a Python virtual environment and run `python scripts/build_site.py`. ffmpeg is needed when creating the original audio examples. The builder writes guide pages, related links, structured data, responsive WebP images and sitemap.xml. It does not run in production. Review the output before committing. Use real modification dates only when content changes. No rankings or indexing timelines are guaranteed.
+
+Seven guides cover subdivisions, displaced clicks, silent bars, tempo ladders, polyrhythms, polymetric groupings and Ableton Link/MIDI. Diagrams and click examples are original educational illustrations, not app recordings. Audio never autoplays and is not preloaded. The app manual is the reference for product behavior; the connectivity guide also links to Ableton's official documentation.
+
+Homepage metadata uses WebSite, WebPage and Organization structured data. Software app rich results require genuine eligible review/rating data which we do not currently publish. Do not fabricate ratings or add incomplete app rich-result markup simply to satisfy a checker. This does not prevent ordinary search indexing.
+
+Nginx uses relative redirects behind Railway's HTTPS proxy so internal port 8080 is never exposed in directory redirects. `/guides`, `/guides/index.html` and `/index.html` redirect to their canonical URLs. Responsive image filenames include a source hash and can be cached for 30 days.
 
 Google Search Console domain property: metronomeo.com. Keep the google-site-verification DNS TXT record. Sitemap submitted and homepage indexing requested on 17 November 2026.
 

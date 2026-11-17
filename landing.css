@@ -22,3 +22,21 @@
 .analytics-choice{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);width:min(570px,calc(100% - 32px));padding:18px 22px;background:#141714;border:1px solid #3b453e;border-radius:16px;z-index:20;box-shadow:0 10px 35px #0008;font-size:13px}.analytics-choice p{margin:0 0 14px;line-height:1.6;color:#d4dcd6}.analytics-choice a{text-decoration:underline}.analytics-choice>div{display:flex;justify-content:flex-end;gap:12px}.analytics-choice button{font:inherit;border:1px solid #66746b;border-radius:22px;padding:10px 16px;background:transparent;color:#f2f4ef;cursor:pointer}.analytics-choice button:hover{background:#303a32}.analytics-choice button:focus-visible,.analytics-settings:focus-visible{outline:2px solid #40e6a2;outline-offset:3px}.analytics-settings{font:inherit;color:#a1aaa5;border:0;background:transparent;cursor:pointer;padding:8px 0;font-size:11px}.analytics-settings:hover{color:#40e6a2}
 
 .device-crop{width:265px;margin:0;border:5px solid #303532;border-radius:35px;overflow:hidden}.feature-image .device-crop img{width:100%;border:0;border-radius:0;margin-top:-15.75%}@media(max-width:800px){.device-crop{width:235px}}
+
+/* Guide illustrations use the same beat and pulse roles as the product. */
+.timing-example{margin-block:32px 45px;padding:25px 22px;border:1px solid var(--line);border-radius:20px;background:#0c100e}
+.article .timing-example h2{margin:0 0 25px;font-size:25px;letter-spacing:-.7px}
+.pulse-row{margin-block:18px}.pulse-name{display:block;font-size:13px;color:var(--muted);margin-bottom:10px}
+.pulse-grid{display:grid;grid-template-columns:repeat(var(--cells),minmax(0,1fr));gap:4px}
+.pulse-cell{display:grid;place-items:center;min-height:36px;border-radius:5px;font-size:14px;font-variant-numeric:tabular-nums;border:1px solid var(--line);color:var(--muted)}
+.pulse-cell.hit{background:var(--green);color:#07160f;border-color:var(--green)}.blue .pulse-cell.hit{background:var(--blue);border-color:var(--blue);color:#061519}
+.article .audio-example{border-top:1px solid var(--line);padding-top:20px;margin-top:25px}
+.article .audio-example h3{font-size:18px;line-height:1.45;font-weight:550;margin:0 0 14px}
+.audio-example audio{display:block;width:100%;min-width:0;height:48px;color-scheme:dark}
+.article .audio-example p{font-size:15px;line-height:1.7;margin:13px 0 0}
+.article .example-note,.article .guide-credit,.article .source{font-size:13px;line-height:1.7}
+.article .example-note{margin:22px 0 0}.article .guide-credit{border-top:1px solid var(--line);padding-top:24px;margin-top:35px}
+.article p a,.article li a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.guide-footer{max-width:690px;border-top:1px solid var(--line);gap:25px;flex-wrap:wrap}
+button:focus-visible,audio:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+@media(max-width:480px){.timing-example{padding:20px 14px}.pulse-grid{gap:2px}.pulse-cell{font-size:13px;min-height:32px}.article h1{font-size:36px;line-height:1.15;overflow-wrap:anywhere}.article h2{line-height:1.3;letter-spacing:-.8px}}

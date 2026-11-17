@@ -1,4 +1,4 @@
-# Anchor Shift: practice with the click between the beats
+# Offbeat metronome practice with Anchor Shift
 
 A metronome usually tells you where the beat is. Anchor Shift changes that relationship: the click sits inside the beat, and you keep track of the pulse around it. It is a useful challenge for drummers, but the same exercise works with a bass line, a guitar pattern, a piano phrase or a sustained wind part.
 
