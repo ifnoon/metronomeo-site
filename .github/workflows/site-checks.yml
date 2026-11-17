@@ -1,0 +1,22 @@
+name: Website checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  nginx-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build production image
+        run: docker build -t metronomeo-site .
+      - name: Run production web server
+        run: docker run --rm -d --name metronomeo-site -p 8768:8080 metronomeo-site
+      - name: Verify pages and redirects through Nginx
+        run: python3 scripts/check_site.py http://127.0.0.1:8768
+      - name: Show server logs on failure
+        if: failure()
+        run: docker logs metronomeo-site

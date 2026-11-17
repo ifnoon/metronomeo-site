@@ -35,3 +35,7 @@ GA4 account 54653930, property 564772486 (Metronomeo), web stream 16357081669, m
 ## Verification
 
 Check local links, headings, anchors, JSON-LD and sitemap XML; inspect desktop and 320px mobile layouts; verify production URLs return 200 and www returns 301; check consent accept/decline and the App Store click event in GA4 Realtime.
+
+## Production smoke checks
+
+Run `python3 scripts/check_site.py` after deployment. GitHub Actions also builds and starts the actual production Nginx image and runs the same checks on every push or pull request. The check fails on unexpected redirects, including self redirects on directory index pages. Python's local preview server does not exercise Nginx routing and cannot replace this check.
